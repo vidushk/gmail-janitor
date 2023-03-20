@@ -60,8 +60,8 @@ for message in messages:
 
 df_delete_sender = pd.read_excel(xls, 'Sender')
 df_delete_word = pd.read_excel(xls, 'Word')
-df_delete_sender.rename(columns={"<Sender> (If multiple, separate by \",\")":"Sender", "Mark as Read? (Yes, No)":"Read", "If Delete, select # of days, or select 0":"Days"}, inplace = True)
-df_delete_word.rename(columns={"Key Word (If multiple, separate by \",\")":"Word", "Mark as Read? (Yes, No)":"Read", "If Delete, select # of days, or select 0":"Days"}, inplace = True)
+df_delete_sender.rename(columns={"<Sender> (separate by \",\")":"Sender", "Mark as Read? (Yes, No)":"Read", "If Delete, select # of days, or select 0":"Days"}, inplace = True)
+df_delete_word.rename(columns={"Key Word (separate by \",\" and keep lowercase)":"Word", "Mark as Read? (Yes, No)":"Read", "If Delete, select # of days, or select 0":"Days"}, inplace = True)
 df_delete_sender.drop(columns=["Sender","Read"],axis=1,inplace=True)
 df_delete_word.drop(columns=["Word","Read"],axis=1,inplace=True)
 
