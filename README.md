@@ -59,6 +59,6 @@ The most optimal way of using this script is having it automatically run on a sc
 > with Google's many security measures.
 
 3. Git pull or download Gmail Janitor as a zip.
-##### Filters.xlsx
+### Filters.xlsx
 To set up filters, fill in the appropriate cells in the excel. **Make sure to create the labels in Gmail as well.**
 **Note: Sometimes, some emails you are trying to filter with sender will not be able to be filtered. In this case, try adding the sender with and without the “<>”.  **
